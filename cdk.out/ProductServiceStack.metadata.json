@@ -1,0 +1,944 @@
+{
+  "/ProductServiceStack/getProductsList": [
+    {
+      "type": "aws:cdk:analytics:construct",
+      "data": {
+        "runtime": "*",
+        "memorySize": "*",
+        "timeout": "*",
+        "entry": "*",
+        "handler": "*",
+        "environment": "*",
+        "bundling": {
+          "externalModules": "*"
+        },
+        "code": "*"
+      }
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {}
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {}
+    },
+    {
+      "type": "aws:cdk:analytics:construct",
+      "data": {
+        "runtime": "*",
+        "memorySize": "*",
+        "timeout": "*",
+        "entry": "*",
+        "handler": "*",
+        "environment": "*",
+        "bundling": {
+          "externalModules": "*"
+        }
+      }
+    }
+  ],
+  "/ProductServiceStack/getProductsById": [
+    {
+      "type": "aws:cdk:analytics:construct",
+      "data": {
+        "runtime": "*",
+        "memorySize": "*",
+        "timeout": "*",
+        "entry": "*",
+        "handler": "*",
+        "environment": "*",
+        "bundling": {
+          "externalModules": "*"
+        },
+        "code": "*"
+      }
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {}
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {}
+    },
+    {
+      "type": "aws:cdk:analytics:construct",
+      "data": {
+        "runtime": "*",
+        "memorySize": "*",
+        "timeout": "*",
+        "entry": "*",
+        "handler": "*",
+        "environment": "*",
+        "bundling": {
+          "externalModules": "*"
+        }
+      }
+    }
+  ],
+  "/ProductServiceStack/createProduct": [
+    {
+      "type": "aws:cdk:analytics:construct",
+      "data": {
+        "runtime": "*",
+        "memorySize": "*",
+        "timeout": "*",
+        "entry": "*",
+        "handler": "*",
+        "environment": "*",
+        "bundling": {
+          "externalModules": "*"
+        },
+        "code": "*"
+      }
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {}
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {}
+    },
+    {
+      "type": "aws:cdk:analytics:construct",
+      "data": {
+        "runtime": "*",
+        "memorySize": "*",
+        "timeout": "*",
+        "entry": "*",
+        "handler": "*",
+        "environment": "*",
+        "bundling": {
+          "externalModules": "*"
+        }
+      }
+    }
+  ],
+  "/ProductServiceStack/products-api": [
+    {
+      "type": "aws:cdk:analytics:construct",
+      "data": {
+        "restApiName": "*",
+        "description": "*",
+        "defaultCorsPreflightOptions": {
+          "allowOrigins": "*",
+          "allowMethods": "*"
+        }
+      }
+    }
+  ],
+  "/ProductServiceStack/ApiUrl": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "ApiUrl"
+    }
+  ],
+  "/ProductServiceStack/BootstrapVersion": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "BootstrapVersion"
+    }
+  ],
+  "/ProductServiceStack/CheckBootstrapVersion": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CheckBootstrapVersion"
+    }
+  ],
+  "/ProductServiceStack/getProductsList/ServiceRole": [
+    {
+      "type": "aws:cdk:analytics:construct",
+      "data": {
+        "assumedBy": {
+          "principalAccount": "*",
+          "assumeRoleAction": "*"
+        },
+        "managedPolicies": [
+          {
+            "managedPolicyArn": "*"
+          }
+        ]
+      }
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {
+        "addToPrincipalPolicy": [
+          {}
+        ]
+      }
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {
+        "attachInlinePolicy": [
+          "*"
+        ]
+      }
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {
+        "attachInlinePolicy": [
+          "*"
+        ]
+      }
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {
+        "addToPrincipalPolicy": [
+          {}
+        ]
+      }
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {
+        "addToPrincipalPolicy": [
+          {}
+        ]
+      }
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {
+        "addToPrincipalPolicy": [
+          {}
+        ]
+      }
+    }
+  ],
+  "/ProductServiceStack/getProductsList/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "getProductsList1F4CE4F4"
+    }
+  ],
+  "/ProductServiceStack/getProductsList/LogGroup": [
+    {
+      "type": "aws:cdk:analytics:construct",
+      "data": {
+        "logGroupName": "*"
+      }
+    }
+  ],
+  "/ProductServiceStack/getProductsById/ServiceRole": [
+    {
+      "type": "aws:cdk:analytics:construct",
+      "data": {
+        "assumedBy": {
+          "principalAccount": "*",
+          "assumeRoleAction": "*"
+        },
+        "managedPolicies": [
+          {
+            "managedPolicyArn": "*"
+          }
+        ]
+      }
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {
+        "addToPrincipalPolicy": [
+          {}
+        ]
+      }
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {
+        "attachInlinePolicy": [
+          "*"
+        ]
+      }
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {
+        "attachInlinePolicy": [
+          "*"
+        ]
+      }
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {
+        "addToPrincipalPolicy": [
+          {}
+        ]
+      }
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {
+        "addToPrincipalPolicy": [
+          {}
+        ]
+      }
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {
+        "addToPrincipalPolicy": [
+          {}
+        ]
+      }
+    }
+  ],
+  "/ProductServiceStack/getProductsById/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "getProductsById008BCA51"
+    }
+  ],
+  "/ProductServiceStack/getProductsById/LogGroup": [
+    {
+      "type": "aws:cdk:analytics:construct",
+      "data": {
+        "logGroupName": "*"
+      }
+    }
+  ],
+  "/ProductServiceStack/createProduct/ServiceRole": [
+    {
+      "type": "aws:cdk:analytics:construct",
+      "data": {
+        "assumedBy": {
+          "principalAccount": "*",
+          "assumeRoleAction": "*"
+        },
+        "managedPolicies": [
+          {
+            "managedPolicyArn": "*"
+          }
+        ]
+      }
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {
+        "addToPrincipalPolicy": [
+          {}
+        ]
+      }
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {
+        "attachInlinePolicy": [
+          "*"
+        ]
+      }
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {
+        "attachInlinePolicy": [
+          "*"
+        ]
+      }
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {
+        "addToPrincipalPolicy": [
+          {}
+        ]
+      }
+    }
+  ],
+  "/ProductServiceStack/createProduct/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "createProduct6AB81851"
+    }
+  ],
+  "/ProductServiceStack/createProduct/LogGroup": [
+    {
+      "type": "aws:cdk:analytics:construct",
+      "data": {
+        "logGroupName": "*"
+      }
+    }
+  ],
+  "/ProductServiceStack/products-api/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "productsapi7D590FA8"
+    }
+  ],
+  "/ProductServiceStack/products-api/Deployment": [
+    {
+      "type": "aws:cdk:analytics:construct",
+      "data": {
+        "description": "*",
+        "api": "*",
+        "retainDeployments": "*"
+      }
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {
+        "addToLogicalId": [
+          {}
+        ]
+      }
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {
+        "addToLogicalId": [
+          {}
+        ]
+      }
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {
+        "addToLogicalId": [
+          {}
+        ]
+      }
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {
+        "addToLogicalId": [
+          {}
+        ]
+      }
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {
+        "addToLogicalId": [
+          {}
+        ]
+      }
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {
+        "addToLogicalId": [
+          {}
+        ]
+      }
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {
+        "addToLogicalId": [
+          {}
+        ]
+      }
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {
+        "addToLogicalId": [
+          {}
+        ]
+      }
+    }
+  ],
+  "/ProductServiceStack/products-api/DeploymentStage.prod": [
+    {
+      "type": "aws:cdk:analytics:construct",
+      "data": {
+        "deployment": "*"
+      }
+    }
+  ],
+  "/ProductServiceStack/products-api/Endpoint": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "productsapiEndpoint053D11BE"
+    }
+  ],
+  "/ProductServiceStack/products-api/Default": [
+    {
+      "type": "aws:cdk:analytics:construct",
+      "data": "*"
+    }
+  ],
+  "/ProductServiceStack/CDKMetadata/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CDKMetadata"
+    }
+  ],
+  "/ProductServiceStack/getProductsList/ServiceRole/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "getProductsListServiceRoleC64A5CD3"
+    }
+  ],
+  "/ProductServiceStack/getProductsList/ServiceRole/DefaultPolicy": [
+    {
+      "type": "aws:cdk:analytics:construct",
+      "data": "*"
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {
+        "attachToRole": [
+          "*"
+        ]
+      }
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {
+        "attachToRole": [
+          "*"
+        ]
+      }
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {
+        "addStatements": [
+          {}
+        ]
+      }
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {
+        "addStatements": [
+          {}
+        ]
+      }
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {
+        "addStatements": [
+          {}
+        ]
+      }
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {
+        "addStatements": [
+          {}
+        ]
+      }
+    }
+  ],
+  "/ProductServiceStack/getProductsList/Code/AssetBucket": [
+    {
+      "type": "aws:cdk:analytics:construct",
+      "data": "*"
+    }
+  ],
+  "/ProductServiceStack/getProductsList/LogGroup/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "getProductsListLogGroupA125C05D"
+    }
+  ],
+  "/ProductServiceStack/getProductsById/ServiceRole/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "getProductsByIdServiceRoleD8824A03"
+    }
+  ],
+  "/ProductServiceStack/getProductsById/ServiceRole/DefaultPolicy": [
+    {
+      "type": "aws:cdk:analytics:construct",
+      "data": "*"
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {
+        "attachToRole": [
+          "*"
+        ]
+      }
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {
+        "attachToRole": [
+          "*"
+        ]
+      }
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {
+        "addStatements": [
+          {}
+        ]
+      }
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {
+        "addStatements": [
+          {}
+        ]
+      }
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {
+        "addStatements": [
+          {}
+        ]
+      }
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {
+        "addStatements": [
+          {}
+        ]
+      }
+    }
+  ],
+  "/ProductServiceStack/getProductsById/Code/AssetBucket": [
+    {
+      "type": "aws:cdk:analytics:construct",
+      "data": "*"
+    }
+  ],
+  "/ProductServiceStack/getProductsById/LogGroup/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "getProductsByIdLogGroup2AA60268"
+    }
+  ],
+  "/ProductServiceStack/createProduct/ServiceRole/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "createProductServiceRole49F078DF"
+    }
+  ],
+  "/ProductServiceStack/createProduct/ServiceRole/DefaultPolicy": [
+    {
+      "type": "aws:cdk:analytics:construct",
+      "data": "*"
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {
+        "attachToRole": [
+          "*"
+        ]
+      }
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {
+        "attachToRole": [
+          "*"
+        ]
+      }
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {
+        "addStatements": [
+          {}
+        ]
+      }
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {
+        "addStatements": [
+          {}
+        ]
+      }
+    }
+  ],
+  "/ProductServiceStack/createProduct/Code/AssetBucket": [
+    {
+      "type": "aws:cdk:analytics:construct",
+      "data": "*"
+    }
+  ],
+  "/ProductServiceStack/createProduct/LogGroup/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "createProductLogGroup1A0370B5"
+    }
+  ],
+  "/ProductServiceStack/products-api/Deployment/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "productsapiDeployment21EB96E4500722b6bcc3cb2409e224b836c20e4d"
+    }
+  ],
+  "/ProductServiceStack/products-api/DeploymentStage.prod/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "productsapiDeploymentStageprod1993B0A7"
+    }
+  ],
+  "/ProductServiceStack/products-api/Default/OPTIONS": [
+    {
+      "type": "aws:cdk:analytics:construct",
+      "data": {
+        "resource": "*",
+        "httpMethod": "*",
+        "integration": "*",
+        "options": {
+          "authorizer": {
+            "authorizerId": "*",
+            "authorizationType": "*"
+          },
+          "apiKeyRequired": false,
+          "authorizationType": "*",
+          "methodResponses": [
+            {
+              "statusCode": "*",
+              "responseParameters": "*"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {
+        "addMethodResponse": [
+          {
+            "statusCode": "*",
+            "responseParameters": "*"
+          }
+        ]
+      }
+    }
+  ],
+  "/ProductServiceStack/products-api/Default/products": [
+    {
+      "type": "aws:cdk:analytics:construct",
+      "data": {
+        "parent": "*",
+        "pathPart": "*"
+      }
+    }
+  ],
+  "/ProductServiceStack/getProductsList/ServiceRole/DefaultPolicy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "getProductsListServiceRoleDefaultPolicyFCF405B6"
+    }
+  ],
+  "/ProductServiceStack/getProductsById/ServiceRole/DefaultPolicy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "getProductsByIdServiceRoleDefaultPolicyF36017B0"
+    }
+  ],
+  "/ProductServiceStack/createProduct/ServiceRole/DefaultPolicy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "createProductServiceRoleDefaultPolicyA4987AF8"
+    }
+  ],
+  "/ProductServiceStack/products-api/Default/OPTIONS/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "productsapiOPTIONS74639306"
+    }
+  ],
+  "/ProductServiceStack/products-api/Default/products/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "productsapiproductsD87799F9"
+    }
+  ],
+  "/ProductServiceStack/products-api/Default/products/OPTIONS": [
+    {
+      "type": "aws:cdk:analytics:construct",
+      "data": {
+        "resource": "*",
+        "httpMethod": "*",
+        "integration": "*",
+        "options": {
+          "authorizer": {
+            "authorizerId": "*",
+            "authorizationType": "*"
+          },
+          "apiKeyRequired": false,
+          "authorizationType": "*",
+          "methodResponses": [
+            {
+              "statusCode": "*",
+              "responseParameters": "*"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {
+        "addMethodResponse": [
+          {
+            "statusCode": "*",
+            "responseParameters": "*"
+          }
+        ]
+      }
+    }
+  ],
+  "/ProductServiceStack/products-api/Default/products/GET": [
+    {
+      "type": "aws:cdk:analytics:construct",
+      "data": {
+        "resource": "*",
+        "httpMethod": "*",
+        "integration": "*",
+        "options": "*"
+      }
+    }
+  ],
+  "/ProductServiceStack/products-api/Default/products/POST": [
+    {
+      "type": "aws:cdk:analytics:construct",
+      "data": {
+        "resource": "*",
+        "httpMethod": "*",
+        "integration": "*",
+        "options": "*"
+      }
+    }
+  ],
+  "/ProductServiceStack/products-api/Default/products/{productId}": [
+    {
+      "type": "aws:cdk:analytics:construct",
+      "data": {
+        "parent": "*",
+        "pathPart": "*"
+      }
+    }
+  ],
+  "/ProductServiceStack/products-api/Default/products/OPTIONS/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "productsapiproductsOPTIONSC2962435"
+    }
+  ],
+  "/ProductServiceStack/products-api/Default/products/GET/ApiPermission.ProductServiceStackproductsapiDD5DC642.GET..products": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "productsapiproductsGETApiPermissionProductServiceStackproductsapiDD5DC642GETproducts8AC765A1"
+    }
+  ],
+  "/ProductServiceStack/products-api/Default/products/GET/ApiPermission.Test.ProductServiceStackproductsapiDD5DC642.GET..products": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "productsapiproductsGETApiPermissionTestProductServiceStackproductsapiDD5DC642GETproductsB243DC9B"
+    }
+  ],
+  "/ProductServiceStack/products-api/Default/products/GET/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "productsapiproductsGETCACF88FF"
+    }
+  ],
+  "/ProductServiceStack/products-api/Default/products/POST/ApiPermission.ProductServiceStackproductsapiDD5DC642.POST..products": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "productsapiproductsPOSTApiPermissionProductServiceStackproductsapiDD5DC642POSTproducts214988A9"
+    }
+  ],
+  "/ProductServiceStack/products-api/Default/products/POST/ApiPermission.Test.ProductServiceStackproductsapiDD5DC642.POST..products": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "productsapiproductsPOSTApiPermissionTestProductServiceStackproductsapiDD5DC642POSTproducts48C24E1F"
+    }
+  ],
+  "/ProductServiceStack/products-api/Default/products/POST/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "productsapiproductsPOST6D9A61D5"
+    }
+  ],
+  "/ProductServiceStack/products-api/Default/products/{productId}/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "productsapiproductsproductId66F8B9AD"
+    }
+  ],
+  "/ProductServiceStack/products-api/Default/products/{productId}/OPTIONS": [
+    {
+      "type": "aws:cdk:analytics:construct",
+      "data": {
+        "resource": "*",
+        "httpMethod": "*",
+        "integration": "*",
+        "options": {
+          "authorizer": {
+            "authorizerId": "*",
+            "authorizationType": "*"
+          },
+          "apiKeyRequired": false,
+          "authorizationType": "*",
+          "methodResponses": [
+            {
+              "statusCode": "*",
+              "responseParameters": "*"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "aws:cdk:analytics:method",
+      "data": {
+        "addMethodResponse": [
+          {
+            "statusCode": "*",
+            "responseParameters": "*"
+          }
+        ]
+      }
+    }
+  ],
+  "/ProductServiceStack/products-api/Default/products/{productId}/GET": [
+    {
+      "type": "aws:cdk:analytics:construct",
+      "data": {
+        "resource": "*",
+        "httpMethod": "*",
+        "integration": "*",
+        "options": "*"
+      }
+    }
+  ],
+  "/ProductServiceStack/products-api/Default/products/{productId}/OPTIONS/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "productsapiproductsproductIdOPTIONS25D9FAE0"
+    }
+  ],
+  "/ProductServiceStack/products-api/Default/products/{productId}/GET/ApiPermission.ProductServiceStackproductsapiDD5DC642.GET..products.{productId}": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "productsapiproductsproductIdGETApiPermissionProductServiceStackproductsapiDD5DC642GETproductsproductId11882020"
+    }
+  ],
+  "/ProductServiceStack/products-api/Default/products/{productId}/GET/ApiPermission.Test.ProductServiceStackproductsapiDD5DC642.GET..products.{productId}": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "productsapiproductsproductIdGETApiPermissionTestProductServiceStackproductsapiDD5DC642GETproductsproductId6012E8BC"
+    }
+  ],
+  "/ProductServiceStack/products-api/Default/products/{productId}/GET/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "productsapiproductsproductIdGET363EF218"
+    }
+  ]
+}

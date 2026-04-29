@@ -19,4 +19,6 @@ const app = new cdk.App();
 
 //   /* For more information, see https://docs.aws.amazon.com/cdk/latest/guide/environments.html */
 // });
-new ProductServiceStack(app, 'ProductServiceStack', {});
+new ProductServiceStack(app, 'ProductServiceStack', {
+  env: { region: process.env.CDK_DEFAULT_REGION ?? 'us-east-1' },
+});
