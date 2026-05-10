@@ -2,6 +2,7 @@
 import * as cdk from 'aws-cdk-lib/core';
 import { AwsStack } from '../lib/aws-stack';
 import { ProductServiceStack } from '../lib/product-service/product-service-stack';
+import { ImportServiceStack } from '../lib/import-service/import-service-stack';
 
 const app = new cdk.App();
 // new AwsStack(app, 'AwsStack', {
@@ -20,5 +21,9 @@ const app = new cdk.App();
 //   /* For more information, see https://docs.aws.amazon.com/cdk/latest/guide/environments.html */
 // });
 new ProductServiceStack(app, 'ProductServiceStack', {
+  env: { region: process.env.CDK_DEFAULT_REGION ?? 'us-east-1' },
+});
+
+new ImportServiceStack(app, 'ImportServiceStack', {
   env: { region: process.env.CDK_DEFAULT_REGION ?? 'us-east-1' },
 });
