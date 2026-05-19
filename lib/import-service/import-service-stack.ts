@@ -1,5 +1,6 @@
 import * as cdk from 'aws-cdk-lib';
 import * as s3 from 'aws-cdk-lib/aws-s3';
+import * as sqs from 'aws-cdk-lib/aws-sqs';
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as lambdaNode from 'aws-cdk-lib/aws-lambda-nodejs';
 import * as apigateway from 'aws-cdk-lib/aws-apigateway';
@@ -7,8 +8,12 @@ import * as s3notifications from 'aws-cdk-lib/aws-s3-notifications';
 import * as path from 'path';
 import { Construct } from 'constructs';
 
+interface ImportServiceStackProps extends cdk.StackProps {
+  catalogItemsQueue: sqs.IQueue;
+}
+
 export class ImportServiceStack extends cdk.Stack {
-  constructor(scope: Construct, id: string, props?: cdk.StackProps) {
+  constructor(scope: Construct, id: string, props: ImportServiceStackProps) {
     super(scope, id, props);
 
     const importBucket = new s3.Bucket(this, 'ImportBucket', {
@@ -46,11 +51,15 @@ export class ImportServiceStack extends cdk.Stack {
       timeout: cdk.Duration.seconds(60),
       entry: path.join(__dirname, './importFileParser.ts'),
       handler: 'handler',
-      environment,
+      environment: {
+        ...environment,
+        CATALOG_ITEMS_QUEUE_URL: props.catalogItemsQueue.queueUrl,
+      },
       bundling: { externalModules: ['@aws-sdk/*'] },
     });
 
     importBucket.grantReadWrite(importFileParserFn);
+    props.catalogItemsQueue.grantSendMessages(importFileParserFn);
 
     importBucket.addEventNotification(
       s3.EventType.OBJECT_CREATED,
