@@ -10,6 +10,7 @@ import { Construct } from 'constructs';
 
 interface ImportServiceStackProps extends cdk.StackProps {
   catalogItemsQueue: sqs.IQueue;
+  basicAuthorizerFn: lambda.IFunction;
 }
 
 export class ImportServiceStack extends cdk.Stack {
@@ -76,9 +77,17 @@ export class ImportServiceStack extends cdk.Stack {
       },
     });
 
+    const authorizer = new apigateway.TokenAuthorizer(this, 'BasicAuthorizer', {
+      handler: props.basicAuthorizerFn,
+      identitySource: 'method.request.header.Authorization',
+      resultsCacheTtl: cdk.Duration.seconds(0),
+    });
+
     const importResource = api.root.addResource('import');
     importResource.addMethod('GET', new apigateway.LambdaIntegration(importProductsFileFn), {
       requestParameters: { 'method.request.querystring.name': true },
+      authorizer,
+      authorizationType: apigateway.AuthorizationType.CUSTOM,
     });
 
     new cdk.CfnOutput(this, 'ImportApiUrl', {
